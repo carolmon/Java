@@ -1,0 +1,42 @@
+
+public class AsciiArt {
+	public static void main(String[] args) {
+		for (int linha = 0; linha < 5; linha++) {
+			for (int coluna = 0; coluna < 5; coluna++) {
+				if (linha == 0 || linha == 4) {
+					System.out.print("*");
+				} else if (coluna == 0) {
+					System.out.print("*");
+				} else {
+					System.out.print(" ");
+				}
+			}
+			System.out.println();
+		}
+		for (int linha = 7; linha < 11; linha++) {
+			for (int coluna = 7; coluna < 11; coluna++) {
+				if (linha == 7 || linha == 9) {
+					System.out.print("*");
+				} else if (coluna == 7 || coluna == 10) {
+					System.out.print("*");
+				} else {
+					System.out.print(" ");
+				}
+
+			}
+			System.out.println();
+		}
+		for (int linha = 13; linha < 17; linha++) {
+			for (int coluna = 13; coluna < 17; coluna++) {
+				if (linha == 13 || linha == 14) {
+					System.out.print("*");
+				} else if (coluna == 13 || coluna == 15) {
+					System.out.print("*");
+				} else {
+					System.out.print(" ");
+				}
+			}
+			System.out.println();
+		}
+	}
+}
