@@ -7,11 +7,11 @@ public class Conta {
 	
 	public Conta(int agencia, int numero) {
 		Conta.total ++;
-		System.out.println("O total de contas é " + Conta.total);
+		//System.out.println("O total de contas é " + Conta.total);
 		this.agencia = agencia;
 		this.numero = numero;
 		this.saldo = 100;
-		System.out.println("Criando uma conta " + this.numero);
+		//System.out.println("Criando uma conta " + this.numero);
 	}
 
 	public double getSaldo() {
