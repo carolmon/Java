@@ -1,60 +1,58 @@
 
+
+
 public class Grafico {
 	public static void main(String[] args) {
-		for (int linha = 0; linha < 10; linha++) {
-			for (int coluna = 0; coluna < 12; coluna++) {
-				if (linha == 0 && coluna == 0) {
-					System.out.print("A");
+		int linha, coluna;
+		char A, B, C, D, E, preenchemento;
+		A = 'A';
+		B = 'B';
+		C = 'C';
+		D = 'D';
+		E = 'E';
+
+		preenchemento = 'O';
+
+		for (linha = 0; linha < 12; linha++) {
+			for (coluna = 0; coluna < 9; coluna++) {
+				if (linha == 0 && coluna == 0) {// grafico A
+					System.out.print(A);
 				} else if (linha == 0 && coluna == 1) {
 					System.out.print("|");
 				} else if (linha == 0 && coluna < 6) {
-					System.out.print("O");
+					System.out.print(preenchemento);
+				}
+
+				if (linha == 1 && coluna == 0) {// grafico B
+					System.out.print(B);
+				} else if (linha == 1 && coluna == 1) {
+					System.out.print("|");
+				} else if (linha == 1 && coluna < 7) {
+					System.out.print(preenchemento);
+				}
+				if (linha == 2 && coluna == 0) {// grafico C
+					System.out.print(C);
+				} else if (linha == 2 && coluna == 1) {
+					System.out.print('|');
+				} else if (linha == 2 && coluna < 4) {
+					System.out.print(preenchemento);
+				}
+				if (linha == 3 && coluna == 0) {// grafico D
+					System.out.print(D);
+				} else if (linha == 3 && coluna == 1) {
+					System.out.print("|");
+				} else if (linha == 3 && coluna < 3) {
+					System.out.print(preenchemento);
+				}
+				if (linha == 4 && coluna == 0) {// grafico E
+					System.out.print(E);
+				} else if (linha == 4 && coluna == 1) {
+					System.out.print("|");
+				} else if (linha == 4 && coluna < 10) {
+					System.out.print(preenchemento);
 				}
 			}
 			System.out.println();
-
-			for (int coluna = 0; coluna < 12; coluna++) {
-				if (linha == 0 && coluna == 0) {
-					System.out.print("B");
-				} else if (linha == 0 && coluna == 1) {
-					System.out.print("|");
-				} else if (linha == 0 && coluna < 7) {
-					System.out.print("O");
-				}
-			}
-			System.out.println();
-
-			for (int coluna = 0; coluna < 12; coluna++) {
-				if (linha == 0 && coluna == 0) {
-					System.out.print("C");
-				} else if (linha == 0 && coluna == 1) {
-					System.out.print("|");
-				} else if (linha == 0 && coluna < 5) {
-					System.out.print("O");
-				}
-			}
-			System.out.println();
-
-			for (int coluna = 0; coluna < 12; coluna++) {
-				if (linha == 0 && coluna == 0) {
-					System.out.print("D");
-				} else if (linha == 0 && coluna == 1) {
-					System.out.print("|");
-				} else if (linha == 0 && coluna < 3) {
-					System.out.print("O");
-				}
-			}
-			System.out.println();
-
-			for (int coluna = 0; coluna < 12; coluna++) {
-				if (linha == 0 && coluna == 0) {
-					System.out.print("E");
-				} else if (linha == 0 && coluna == 1) {
-					System.out.print("|");
-				} else if (linha == 0 && coluna < 9) {
-					System.out.print("O");
-				}
-			}
 		}
 	}
 }
