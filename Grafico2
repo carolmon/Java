@@ -1,0 +1,71 @@
+
+public class Grafico2 {
+	public static void main(String[] args) {
+		int linha, coluna;
+		char A, B, C, D, E, preenchemento;
+		A = 'A';
+		B = 'B';
+		C = 'C';
+		D = 'D';
+		E = 'E';
+		preenchemento = 'O';
+		for (linha = 0; linha < 11; linha++) {
+			for (coluna = 0; coluna < 9; coluna++) {
+				if (linha == 7 && coluna <=4) {
+					System.out.print("-");
+				}
+				if(linha == 8 && coluna == 0) {
+					System.out.print(A);
+				}else if (linha == 8 && coluna == 1) {
+					System.out.print(B);
+				}else if (linha == 8 && coluna == 2) {
+					System.out.print(C);
+				}else if (linha == 8 && coluna == 3) {
+					System.out.print(D);
+				}else if (linha == 8 && coluna == 4) {
+					System.out.print(E);
+				}
+				if (linha == 6 && coluna <= 4) {
+					System.out.print(preenchemento);
+				} else if (linha == 5 && coluna <= 2) {
+					System.out.print(preenchemento);
+				} else if (linha == 5 && coluna == 3) {
+					System.out.print(" ");
+				} else if (linha == 5 && coluna >= 3 && coluna == 4) {
+					System.out.print(preenchemento);
+				} else if (linha == 4 && coluna <= 1) {
+					System.out.print(preenchemento);
+				} else if (linha == 4 && coluna < 4) {
+					System.out.print(" ");
+				} else if (linha == 4 && coluna == 4) {
+					System.out.print(preenchemento);
+				} else if (linha == 3 && coluna >= 0 && coluna < 2) {
+					System.out.print(preenchemento);
+				} else if (linha == 3 && coluna >= 2 && coluna <= 3) {
+					System.out.print(" ");
+				} else if (linha == 3 && coluna == 4) {
+					System.out.print(preenchemento);
+				}else if (linha ==2 && coluna ==0) {
+					System.out.print(" ");
+				}else if(linha ==2 && coluna ==1) {
+					System.out.print(preenchemento);
+				}else if (linha ==2 &&coluna<=3) {
+					System.out.print(" ");
+				}else if (linha ==2 && coluna ==4) {
+					System.out.print(preenchemento);
+				}else if(linha == 1&& coluna<4) {
+					System.out.print(" ");
+				}else if(linha ==1 && coluna == 4) {
+					System.out.print(preenchemento);
+				}else if(linha == 0&& coluna<4) {
+					System.out.print(" ");
+				}else if(linha ==0 && coluna == 4) {
+					System.out.print(preenchemento);
+				}
+				// System.out.println();
+			}
+			System.out.println();
+
+		}
+	}
+}
