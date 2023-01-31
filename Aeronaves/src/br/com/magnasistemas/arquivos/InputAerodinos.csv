@@ -1,0 +1,3 @@
+Tripulação,Motorização,Combustivel,Alcance,Porte,Função,Area de Pouso,Quantidade Motores,Quantidade Asas,Fixação Asas,Estabilizador,Tipo de Motor,Aterragem,Posição das Asas,Forma das Asas,Tipo de Asas,Tipo de Rotor,Classificação de Rotores,Rotor De Calda,nome,tipo
+false,true,bateria,30km,pequeno,serviço,terra,4,4,,,,,,,rotor,rigido,lado a lado,tem,jorge,drone
+true,false,força,100km,medio,lazar,terra,0,1,sem suporte,convecional,null,trem de pouso,media,trapezoidal,fixa,,,ñ tem,banze,planador

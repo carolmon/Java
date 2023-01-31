@@ -1,27 +1,34 @@
 package br.com.magnasistemas.aeronave;
 
+import java.io.IOException;
+
+import br.com.magnasistemas.Criacao.CriaAerodino;
+import br.com.magnasistemas.arquivos.Inputs;
+import br.com.magnasistemas.enums.Combustivel;
+import br.com.magnasistemas.enums.tipoAsa;
+
 public abstract class Aeronave {
 
-	// tripulação
-	public boolean tripulacao;
+	// tripulaï¿½ï¿½o
+	public static  String tripulacao;
 
-	public boolean getTripulacao() {
+	public String getTripulacao() {
 		return tripulacao;
 	}
 
-	public void setTripulacao(boolean tripulacao) {
-		this.tripulacao = tripulacao;
+	public  void setTripulacao() throws IOException {
+		this.tripulacao = Inputs.pegaTripulacao();
 	}
 
 	// motor
-	public boolean motor;
+	public String motor;
 
-	public boolean getMotor() {
+	public String getMotor() {
 		return motor;
 	}
 
-	public void setMotor(boolean motor) {
-		this.motor = motor;
+	public void setMotor() throws IOException {
+		this.motor = Inputs.pegaMotor();
 	}
 
 	// porte
@@ -31,30 +38,45 @@ public abstract class Aeronave {
 		return porte;
 	}
 
-	public void setPorte(String porte) {
-		this.porte = porte;
+	public void setPorte() throws IOException {
+		this.porte = Inputs.pegaPorte();
 	}
 
-	// função
+	// funï¿½ï¿½o
 	public String funcao;
 
-	public String getFuncao() {
-		return funcao;
+	public String getFuncao() throws IOException {
+		return funcao = Inputs.pegaFuncao();
 	}
 
-	public void setFuncao(String funcao) {
-		this.funcao = funcao;
+	public void setFuncao(String funcao) throws IOException {
+		this.funcao = Inputs.pegaFuncao();
 	}
 
 	// combustivel
 	public String combustivel;
 
-	public String getCombustivel() {
-		return combustivel;
+	public Combustivel getCombustivel() throws IOException {
+		if (Inputs.pegaCombustivel().contains("ar quante") || Inputs.pegaCombustivel().contains("helio")
+				|| Inputs.pegaCombustivel().contains("hidrogenio")
+				|| Inputs.pegaCombustivel().contains("amonia")
+				|| Inputs.pegaCombustivel().contains("carvao")
+				|| Inputs.pegaCombustivel().contains("hibrido")) {
+			return Combustivel.GAS;
+		} else if (Inputs.pegaCombustivel().contains("gasolina")
+				|| Inputs.pegaCombustivel().contains("etanol")) {
+			return Combustivel.LIQUIDO;
+		} else if (Inputs.pegaCombustivel().contains("bateria")) {
+			return Combustivel.BATERIA;
+		} else if (Inputs.pegaCombustivel().contains("forÃ§a")) {
+			return Combustivel.FORCA;
+		}
+		return null;
+
 	}
 
-	public void setCombustivel() {
-		this.combustivel = combustivel;
+	public void setCombustivel() throws IOException {
+		this.combustivel = Inputs.pegaCombustivel();
 	}
 
 	// area de pouso
@@ -64,19 +86,29 @@ public abstract class Aeronave {
 		return areaDePouso;
 	}
 
-	public void setAreaDePouso() {
-		this.areaDePouso = areaDePouso;
+	public void setAreaDePouso() throws IOException {
+		this.areaDePouso = Inputs.pegaAreaDePouso();
 	}
 
-	public void decolagem() {
+	public String alcance;
+
+	public String getAlcance() {
+		return areaDePouso;
+	}
+
+	public void setAlcance() throws IOException {
+		this.areaDePouso = Inputs.pegaAlcance();
+	}
+
+	public static void decolagem() {
 
 	}
 
-	public void pousa() {
+	public static void pousa() {
 
 	}
 
-	public void abastace() {
+	public static void abastace() {
 	}
 
 }

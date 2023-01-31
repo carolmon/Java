@@ -1,15 +1,20 @@
 package br.com.magnasistemas.aerodinos;
 
-public class AsaFixa {
-	String fixacaoAsas;
+import java.io.IOException;
 
-	public String getFixacaoAsas() {
-		return fixacaoAsas;
+import br.com.magnasistemas.Criacao.CriaAerodino;
+import br.com.magnasistemas.arquivos.Inputs;
+import br.com.magnasistemas.enums.Combustivel;
+
+public class AsaFixa extends CriaAerodino {
+	public static void main(String[] args) throws IOException {
+		getTrataPorte();
+		getTrataAlcance();
+		getTrataFuncao();
+		getInputTripulacao();
+		getTrataAterragem();
+		getTrataCombustivel();
+		getTrataMotor();
+		
 	}
-
-	public void setFixacaoAsas(String fixacaoAsas) {
-		this.fixacaoAsas = fixacaoAsas;
-	}
-	//escrever parte q recebe o input do csv para implementação do enum
-
 }

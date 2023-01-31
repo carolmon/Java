@@ -1,0 +1,7 @@
+Tripulação,Motorização,Combustivel,Alcance,Porte,Função,Area de Pouso,Quantidade Motores,Quantidade Asas,Fixação Asas,Estabilizador,Tipo de Motor,Aterragem,Posição das Asas,Forma das Asas,Tipo de Asas,Tipo de Rotor,Classificação de Rotores,Rotor De Calda,Rigidez,Cabine,Controle,nome,tipo
+false,true,bateria,30km,pequeno,serviço,terra,4,4,null,null,null,null,null,null,rotor,rigido,lado a lado,tem,null,false,null,jorge,drone
+true,false,força,100km,medio,lazar,terra,0,1,sem suporte,convecional,null,0,media,trapezoidal,fixa,null,null,ñ tem,null,null,null,banze,planador
+true,false,helio,300km,pequeno,serviço,terra,null,null,null,null,null,null,null,null,null,null,null,null,null,false,false,1,balão
+true,true,helio,300km,medio,serviço,terra,null,null,null,null,null,null,null,null,null,null,null,null,metalclad,true,true,2,dirigivel
+true,true,gasolina,300km,medio,serviço,terra,2,2,sem suporte,convecional,null,0,media,trapezoidal,fixa,null,null,null,null,null,null,3,aviao
+true,true,gasolina,300km,medio,serviço,terra,2,3,com suporte,convecional,0,0,media,trapezoidal,fixa,null,null,null,null,null,null,4,aviao

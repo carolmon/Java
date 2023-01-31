@@ -1,7 +1,7 @@
 package br.com.magnasistemas.aerodinos;
 
 
-public class Hibrido {
+public class Hibrido extends AsaRodatoria{
 	String fixacaoAsas;
 
 	public String getFixacaoAsas() {
@@ -11,5 +11,6 @@ public class Hibrido {
 	public void setFixacaoAsas(String fixacaoAsas) {
 		this.fixacaoAsas = fixacaoAsas;
 	}
-	//escrever parte q recebe o input do csv para implementação do enum
+	
+	//escrever parte q recebe o input do csv para implementaï¿½ï¿½o do enum
 }

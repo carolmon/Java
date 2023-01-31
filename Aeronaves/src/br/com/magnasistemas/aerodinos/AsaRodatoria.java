@@ -1,16 +1,19 @@
 package br.com.magnasistemas.aerodinos;
 
-public class AsaRodatoria {
-	String rotorDeCauda;
+import java.io.IOException;
 
-	public String getRotorDeCauda() {
-		return rotorDeCauda;
-	}
+import br.com.magnasistemas.Criacao.CriaAerodino;
 
-	public void setRotorDeCauda(String rotorDeCauda) {
-		this.rotorDeCauda = rotorDeCauda;
+public class AsaRodatoria extends CriaAerodino{
+	public static void main(String[] args) throws IOException {
+		getTrataPorte();
+		getTrataAlcance();
+		getTrataFuncao();
+		getInputTripulacao();
+		getTrataCombustivel();
+		getTrataMotor();
+		getTrataRotorDeCalda();
+		pegaQuantidadeMotores();
 	}
-	//escrever parte q recebe o input do csv para implementação do enum
-	
 
 }

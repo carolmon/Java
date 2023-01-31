@@ -1,0 +1,3 @@
+Tripulação,Motorização,Combustivel,Alcance,Porte,Função,Area de Pouso,Controle,Cabine,Rigidez
+true,false,helio,100km,medio,lazer,terra,false,false,rigido
+true,true,hidrogenio,400km,grande,publicidade,terra,true,true,semi-rigido

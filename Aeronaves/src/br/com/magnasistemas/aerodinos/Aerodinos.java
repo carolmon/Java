@@ -1,34 +1,26 @@
 package br.com.magnasistemas.aerodinos;
 
+import java.io.IOException;
 
 import br.com.magnasistemas.aeronave.Aeronave;
+import br.com.magnasistemas.arquivos.Inputs;
+import br.com.magnasistemas.enums.Combustivel;
+import br.com.magnasistemas.enums.tipoAsa;
 
-public class Aerodinos extends Aeronave{
-	//Tratamento motores
-	int quantidadeMotores;
-	
-	public int getQuantidadeMotores() {
-		return quantidadeMotores;
-	}
-	public void setQuantidadeMotores(int quantidadeMotores) {
-		this.quantidadeMotores = quantidadeMotores;
-	}
-	
-	
-	//tratamento Asa
-	int quantiadeAsa;
-	
-	public int getQuantiadeAsa() {
-		return quantiadeAsa;
-	}
-	public void setQuantiadeAsa(int quantiadeAsa) {
-		this.quantiadeAsa = quantiadeAsa;
-	}
-	//verifica se tem 
-	public void temAsa() {
-		if(getQuantiadeAsa()==0) {
-			System.out.println("asa ñ pode ser 0");
+public class Aerodinos extends Aeronave {
+
+	public tipoAsa getTipoDeAsa() throws IOException {
+		if (Inputs.pegaTipoDeAsas().contains("hibrida")) {
+			return tipoAsa.HIBRIDA;
+		} else if (Inputs.pegaTipoDeAsas().contains("fixa")) {
+			return tipoAsa.FIXA;
+		} else if (Inputs.pegaTipoDeAsas().contains("rodativa")) {
+			return tipoAsa.RODATIVA;
+		} else {
+			// assa invalida
 		}
+		return null;
+		
 	}
 	
 }
