@@ -1,0 +1,27 @@
+Impulsor,Combustivel,Porte,Função,Nome,Rigidez,Quantidade de Asas,Quantidade de Motores,Aeronave
+pistão,gasolina,grande,comercial,AviaoTeste,N Tem,2,3,Aviao
+dilatação,helio,medio,lazer,BalaoTeste,N Tem,,,Balao
+dilatação,helio,medio,comercial,DirigivelTeste,SEMIRIGIDO,,,Dirigivel
+helice,etanol,grande,serviço,HelicopteroTeste,N Tem,2,2,Helicoptero
+turbina,gasolina,pequeno,serviço,DroneAsaFixaTeste,N Tem,1,1,Drone Asa Fixa
+helice,gasolina,pequeno,lazer,DroneAsaRotativaTeste,N Tem,,1,Drone Asa Rotativa
+força,forca,medio,lazer,PlanadorTeste,N Tem,1,,Planador
+força,forca e gasolina,medio,laser,MotoPlanadorTeste,N Tem,1,1,MotoPlanador
+pistão,gasolina,grande, militar,HibridoTeste,N Tem,1,4,Hibrido
+dilatação,ar quente,medio,lazer,BalaoTeste2,N Tem,,,Balao
+dilatação,ar quente helio,medio,lazer,BalaoTeste,N Tem,,,Balao
+helice,gasolina,pequeno,lazer,DroneAsaRotativaTeste,N Tem,,3,Drone Asa Rotativa
+helice,gasolina,pequeno,lazer,DroneAsaRotativaTeste,N Tem,,4,Drone Asa Rotativa
+helice,gasolina,pequeno,lazer,DroneAsaRotativaTeste,N Tem,,6,Drone Asa Rotativa
+helice,gasolina,pequeno,lazer,DroneAsaRotativaTeste,N Tem,,8,Drone Asa Rotativa
+força,forca e gasolina,medio,laser,MotoPlanadorTeste,N Tem,2,2,MotoPlanador
+força,forca,medio,lazer,PlanadorTeste,N Tem,2,,Planador
+dilatação,helio,medio,comercial,DirigivelTeste,rigido,,,Dirigivel
+dilatação,helio,medio,comercial,DirigivelTeste,n rigido,,,Dirigivel
+dilatação,helio,medio,comercial,DirigivelTeste,metal clad,,,Dirigivel
+dilatação,helio,medio,comercial,DirigivelTeste,hibrido,,,Dirigivel
+turbina,gasolina,pequeno,serviço,DroneAsaFixaTeste,N Tem,2,2,Drone Asa Fixa
+pistão,gasolina,grande,comercial,AviaoTeste,N Tem,1,1,Aviao
+pistão,gasolina,grande,comercial,AviaoTeste,N Tem,0,3,Aviao
+pistão,gasolina,grande,comercial,AviaoTeste,N Tem,3,4,Aviao
+helice,etanol,grande,serviço,HelicopteroTeste,N Tem,1,1,Helicoptero
