@@ -15,7 +15,7 @@ public enum Combustivel {
 		combustivel = valorOpcao;
 	}
 
-	public String getTipoGases() {
+	public String getCombustivel() {
 		return combustivel;
 	}
 }

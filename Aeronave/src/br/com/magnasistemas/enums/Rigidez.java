@@ -13,7 +13,7 @@ public enum Rigidez {
 		rigidez = valorOpcao;
 	}
 
-	public String getTipoGases() {
+	public String getRigidez() {
 		return rigidez;
 	}
 }

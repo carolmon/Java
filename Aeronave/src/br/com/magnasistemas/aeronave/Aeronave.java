@@ -3,16 +3,20 @@ package br.com.magnasistemas.aeronave;
 import br.com.magnasistemas.enums.Combustivel;
 import br.com.magnasistemas.enums.TipoAeronave;
 import br.com.magnasistemas.enums.TipoDeAsa;
+import br.com.magnasistemas.enums.Tripulacao;
 
 public abstract class Aeronave {
 	protected String impulsdor;
 	protected Combustivel combustivel;
 	protected TipoAeronave tipoAeronave;
+	protected Tripulacao tripulacao;
 	protected String porte;
 	protected String funcao;
 	protected String nome;
 	
 	
+	
+
 	public Combustivel getCombustivel() {
 		return combustivel;
 	}
@@ -20,6 +24,16 @@ public abstract class Aeronave {
 	public void setCombustivel(Combustivel combustivel) {
 		this.combustivel = combustivel;
 	}
+
+	public String getImpulsdor() {
+		return impulsdor;
+	}
+
+	public void setImpulsdor(String impulsdor) {
+		this.impulsdor = impulsdor;
+	}
+
+	
 
 	public String getPorte() {
 		return porte;

@@ -4,6 +4,7 @@ import br.com.magnasistemas.aerodino.Aviao;
 import br.com.magnasistemas.aerodino.DroneAsaFixa;
 import br.com.magnasistemas.aerodino.DroneAsaRotativa;
 import br.com.magnasistemas.aerodino.Helicoptero;
+import br.com.magnasistemas.aerodino.Hibrido;
 import br.com.magnasistemas.aerodino.MotoPlanador;
 import br.com.magnasistemas.aerodino.Planador;
 import br.com.magnasistemas.aerostatos.Balao;
@@ -25,6 +26,19 @@ public class Tratamento extends Entrada {
 									   .build();
 
 			registros.add(novoAviao);
+			break;
+		case HIBRIDO:
+			Hibrido novoHibrido = new Hibrido.Builder()
+									   .nome(nome)
+									   .quantidadeDeAsas(Integer.parseInt(quantiadeAsas))
+									   .quantidadeDeMotores(Integer.parseInt(quantidadeMotores))
+									   .combustivel(combustivel)
+									   .funcao(funcao)
+									   .porte(porte)
+									   .impulsdor(impulsor)
+									   .build();
+
+			registros.add(novoHibrido);
 			break;
 		case BALAO:
 			Balao novoBalao = new Balao.Builder()

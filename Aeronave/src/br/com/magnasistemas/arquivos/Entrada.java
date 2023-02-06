@@ -22,7 +22,7 @@ public class Entrada {
 	protected static String quantiadeAsas;
 	protected static String quantidadeMotores;
 	protected static Aeronave tipoDeAeronave;
-	static String caminhoArquivo = "C:\\dev\\workspaces\\2022_12\\Aeronaves\\src\\br\\com\\magnasistemas\\arquivos\\Aeronaves.csv";
+	static String caminhoArquivo = "C:\\dev\\workspaces\\2022_12\\Aeronave\\src\\br\\com\\magnasistemas\\arquivos\\Entrada.csv";
 	static String caminhoArquivoRemoto = "C:\\Users\\carol\\eclipse-workspace\\Aeronave\\src\\br\\com\\magnasistemas\\arquivos\\Entrada.csv";
 	static List<Object> registros = new ArrayList<>();
 	
@@ -30,7 +30,7 @@ public class Entrada {
 			
 		
 
-		BufferedReader arqIn = new BufferedReader(new InputStreamReader(new FileInputStream(caminhoArquivoRemoto), "UTF-8"));
+		BufferedReader arqIn = new BufferedReader(new InputStreamReader(new FileInputStream(caminhoArquivo), "UTF-8"));
 		String linha = arqIn.readLine();
 		linha = arqIn.readLine();
 		while (linha != null) {
