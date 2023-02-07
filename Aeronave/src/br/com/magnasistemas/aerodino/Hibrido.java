@@ -1,6 +1,5 @@
 package br.com.magnasistemas.aerodino;
 
-import br.com.magnasistemas.aerodino.Hibrido.Builder;
 import br.com.magnasistemas.enums.Combustivel;
 import br.com.magnasistemas.enums.Motorizasao;
 import br.com.magnasistemas.enums.OutrosComponentes;
@@ -15,20 +14,33 @@ public class Hibrido extends Aerodino {
 	protected String categoriaAsas;
 	protected String categoriaMotores;
 
-	public Hibrido(Builder builder) {
-		this.nome = builder.nome;
-		this.combustivel = builder.combustivel;
-		this.funcao = builder.funcao;
-		this.impulsdor = builder.impulsdor;
-		this.porte = builder.porte;
-		this.quantidadeDeAsas = builder.quantidadeDeAsas;
-		this.quantidadeDeMotores = builder.quantidadeDeMotores;
+	public Hibrido(String nome, 
+	     	  	   String funcao, 
+	     	  	   String impulsor, 
+	     	  	   String porte,
+	     	  	   Tripulacao tripulacao,
+	     	  	   Combustivel combustivel,
+	     	  	   Integer quantidadeDeAsas,
+	     	  	   Integer quantidadeDeMotores,
+	     	  	   OutrosComponentes caixaPreta) {
+		setNome("\n"+"NOME: "+nome);
+		setFuncao("\n"+"FUNÇÃO: "+funcao);
+		setImpulsdor("\n"+"IMPULSOR: "+impulsor);
+		setPorte("\n"+"PORTE: "+porte);
+		setCombustivel(combustivel);
+		setQuantidadeDeAsas(quantidadeDeAsas);
+		setQuantidadeDeMotores(quantidadeDeMotores);
+	
+	}
+	public String categoriaAsa() {
 		if (getQuantidadeDeAsas() == 1) {
 			categoriaAsas = " monoplano";
 		} else {
 			categoriaAsas = " asa invalida";
 		}
-
+		return  "\n"+"CATEGORIA DE ASAS: "+categoriaAsas;
+	}
+	public String categoriaMotor() {
 		switch (getQuantidadeDeMotores()) {
 
 		case 0:
@@ -50,78 +62,40 @@ public class Hibrido extends Aerodino {
 			categoriaMotores = " multimotor  ";
 			break;
 		}
+		return "\n"+"CATEGORIA DE MOTORES: "+categoriaMotores;
 	}
 
 	public String resultados() {
-		return nome + impulsdor + combustivel + porte + funcao + categoriaAsas + categoriaMotores + asa.getTipoDeAsa()
-				+ caixaPreta.getComponentes() + tripulacao.getTripulacao() + motor.getMotorizasao();
+		return nome 
+			  +impulsdor 
+			  +combustivel.getCombustivel()
+			  +porte 
+			  +funcao 
+			  +categoriaAsa() 
+			  +categoriaMotor() 
+			  +asa.getTipoDeAsa()
+			  +caixaPreta.getComponentes() 
+			  +tripulacao.getTripulacao() 
+			  +motor.getMotorizasao();
 
 	}
 
-	public static class Builder {
-
-		private Integer quantidadeDeAsas;
-		private Integer quantidadeDeMotores;
-		private String nome;
-		private String impulsdor;
-		private Combustivel combustivel;
-		private String porte;
-		private String funcao;
-
-		public Builder quantidadeDeAsas(final Integer quantidadeDeAsas) {
-			this.quantidadeDeAsas = quantidadeDeAsas;
-			return this;
-		}
-
-		public Builder quantidadeDeMotores(final Integer quantidadeDeMotores) {
-			this.quantidadeDeMotores = quantidadeDeMotores;
-			return this;
-		}
-
-		public Builder nome(final String nome) {
-			this.nome = nome;
-			return this;
-		}
-
-		public Builder impulsdor(final String impulsdor) {
-			this.impulsdor = impulsdor;
-			return this;
-		}
-
-		public Builder combustivel(final Combustivel combustivel) {
-			this.combustivel = combustivel;
-			return this;
-		}
-
-		public Builder porte(final String porte) {
-			this.porte = porte;
-			return this;
-		}
-
-		public Builder funcao(final String funcao) {
-			this.funcao = funcao;
-			return this;
-		}
-
-		public Hibrido build() {
-			return new Hibrido(this);
-		}
-	}
+	
 	@Override
 	public String toString() {
 	
 		return"\n Hibrido: " 
-				+  this.nome + " " 
-				+ this.impulsdor + " " 
-				+ this.combustivel+ " "
-				+ this.porte + " " 
-				+ this.funcao+ " "
-				+ this.categoriaAsas + " "
-				+ this.categoriaMotores + " "
-				+ this.asa + " "
-				+ this.caixaPreta + " "
-				+ this.tripulacao + " "
-				+ this.motor + " ";
+				+ this.getNome()
+				+ this.getImpulsdor()
+				+ this.getCombustivel() 
+				+ this.getPorte()
+				+ this.getFuncao() 
+				+ this.categoriaAsa() 
+				+ this.categoriaMotor() 
+				+ this.asa.getTipoDeAsa() 
+				+ this.caixaPreta.getComponentes()
+				+ this.tripulacao.getTripulacao()
+				+ this.motor.getMotorizasao();
 	}
 
 }

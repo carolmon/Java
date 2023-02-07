@@ -10,6 +10,9 @@ public class Aerodino extends Aeronave {
 	protected  Integer quantidadeDeMotores;
 	protected final TipoAeronave aerodino = TipoAeronave.AERODINO;
 	protected final TipoDeAsa asa = null;
+	
+
+	
 
 	public  Integer getQuantidadeDeAsas() {
 		return quantidadeDeAsas;

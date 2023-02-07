@@ -13,6 +13,7 @@ public abstract class Aeronave {
 	protected String porte;
 	protected String funcao;
 	protected String nome;
+	protected String nomeCombusitvel;
 	
 	
 	
@@ -23,6 +24,7 @@ public abstract class Aeronave {
 
 	public void setCombustivel(Combustivel combustivel) {
 		this.combustivel = combustivel;
+		
 	}
 
 	public String getImpulsdor() {

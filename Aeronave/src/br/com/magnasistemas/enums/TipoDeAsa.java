@@ -11,6 +11,7 @@ public enum TipoDeAsa {
 	}
 
 	public String getTipoDeAsa() {
-		return tipoDeAsa;
+		return "\n" + "TIPO DE ASA: "+this.tipoDeAsa;
 	}
+	
 }

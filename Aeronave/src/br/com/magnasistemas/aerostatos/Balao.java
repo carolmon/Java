@@ -17,12 +17,12 @@ public class Balao extends Aerostato {
 			     Tripulacao tripulacao, 
 			     OutrosComponentes cesto) {
 
-		setNome(nome + " ");
-		setFuncao(funcao + " ");
-		setImpulsdor(impulsor + " ");
-		setPorte(porte + " ");
+		setNome("\n"+"NOME: "+nome);
+		setFuncao("\n"+"FUNÇÃO: "+funcao);
+		setImpulsdor("\n"+"IMPULSOR: "+impulsor);
+		setPorte("\n"+"PORTE: "+porte);
 		setCombustivel(combustivel);
-		setFlutuabilidade(" " + flutuabilidade() + " ");
+		setFlutuabilidade("\n"+"FLUTUABILIDADE: "+flutuabilidade());
 
 	}
 
@@ -50,7 +50,7 @@ public class Balao extends Aerostato {
 			  +impulsdor
 			  +porte
 			  +funcao
-			  +combustivel
+			  +combustivel.getCombustivel()
 			  +flutuabilidade
 			  +tripulacao.getTripulacao()
 			  +cesto.getComponentes();
@@ -61,13 +61,13 @@ public class Balao extends Aerostato {
 	public String toString() {
 
 		return "\n Balão: " 
-				+ this.getNome() + " " 
-				+ this.getImpulsdor() + " " 
-				+ this.getCombustivel() + " "
-				+ this.flutuabilidade + " " 
-				+ this.getPorte() + " " 
-				+ this.getFuncao() + " " 
-				+ this.tripulacao + " "
-				+ this.cesto + " ";
+				+ this.getNome() 
+				+ this.getImpulsdor()
+				+ this.getCombustivel()
+				+ this.flutuabilidade
+				+ this.getPorte()
+				+ this.getFuncao()
+				+ this.tripulacao.getTripulacao()
+				+ this.cesto.getComponentes();
 	}
 }

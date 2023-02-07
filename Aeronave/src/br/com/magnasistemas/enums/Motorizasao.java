@@ -11,6 +11,6 @@ public enum Motorizasao {
 		motorizao = valorOpcao;
 	}
 	public String getMotorizasao() {
-		return motorizao;
+		return "\n" + "MOTORIÇASÃO: "+this.motorizao;
 	}
 }

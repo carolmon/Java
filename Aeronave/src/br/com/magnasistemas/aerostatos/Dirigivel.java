@@ -1,7 +1,7 @@
 package br.com.magnasistemas.aerostatos;
 
 import br.com.magnasistemas.aerodino.Aviao;
-import br.com.magnasistemas.aerodino.Aviao.Builder;
+
 import br.com.magnasistemas.enums.Combustivel;
 import br.com.magnasistemas.enums.OutrosComponentes;
 import br.com.magnasistemas.enums.Rigidez;
@@ -22,17 +22,18 @@ public class Dirigivel extends Aerostato {
 			 		 OutrosComponentes leme,
 			 		 OutrosComponentes gondola,
 			 		 Rigidez rigidez) {
-		setNome(nome + " ");
-		setFuncao(funcao + " ");
-		setImpulsdor(impulsor + " ");
-		setPorte(porte + " ");
+		setNome("\n"+"NOME: "+nome);
+		setFuncao("\n"+"FUNÇÃO: "+funcao);
+		setPorte("\n"+"PORTE: "+porte + " ");
 		setCombustivel(combustivel);
-		setRigidez(rigidez());
+		setImpulsdor("\n"+"IMPULSOR: "+impulsor + " ");
+		setRigidez(rigidez);
+		setFlutuabilidade(" "+rigidez()+" ");
 		
 		
 
 	}
-	public Rigidez rigidez() {
+	public String rigidez() {
 		switch (rigidez) {
 		case RIGIDO:
 			flutuabilidade = "Dirigivel Rigido ";
@@ -50,16 +51,16 @@ public class Dirigivel extends Aerostato {
 			flutuabilidade = "Dirigivel hibrido ";
 			break;
 	}
-		return rigidez;
+		return flutuabilidade;
 	}
 
 	public String resultados() {
 		return nome 
 			   +impulsdor
-			   +combustivel
+			   +combustivel.getCombustivel()
 			   +porte
 			   +funcao
-			   +rigidez 
+			   +rigidez.getRigidez() 
 			   +leme.getComponentes() 
 			   +gondola.getComponentes() 
 			   +tripulacao.getTripulacao();
@@ -70,15 +71,15 @@ public class Dirigivel extends Aerostato {
 	public String toString() {
 		
 		return"\n Dirigivel: " 
-				+this.nome + " " 
-				+this.impulsdor + " " 
-				+this.combustivel+ " "
+				+this.getNome() 
+				+this.getImpulsdor()
+				+this.getCombustivel()
 				+this.flutuabilidade+ " "
-				+this.porte+ " " 
-				+this.funcao+ " "
-				+this.rigidez+ " "
-				+this.leme+ " "
-				+this.gondola+ " "
-				+this.tripulacao+ " ";
+				+this.getPorte()
+				+this.getFuncao()
+				+this.rigidez.getRigidez()
+				+this.leme.getComponentes()
+				+this.gondola.getComponentes()
+				+this.tripulacao.getTripulacao();
 	}
 }

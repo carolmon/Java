@@ -7,6 +7,6 @@ public enum Tripulacao {
 		tripulacao = valorOpcao;
 	}
 	public String getTripulacao() {
-		return tripulacao;
+		return "\n" + "TRIPULAÇÃO: "+this.tripulacao;
 	}
 }

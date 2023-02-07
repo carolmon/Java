@@ -27,90 +27,6 @@ import br.com.magnasistemas.enums.Tripulacao;
 
 public class CriaAeronave {
 
-//	@Test
-//	public void testeAviao(){
-//		Aviao testeAviao = new Aviao.Builder().combustivel(Combustivel.GASOLINA).funcao("comercial").impulsdor("pistão").nome("jorginho").
-//				porte("grande").quantidadeDeAsas(2).quantidadeDeMotores(3).build();
-//				testeAviao.resultados();
-//				System.out.println("Avião 1 " + testeAviao.resultados());
-//		assertNotEquals(testeAviao, null);
-//	}
-//	@Test
-//	public void testeDroneAsaFixa() {
-//		DroneAsaFixa testeDroneAsaFixa = new DroneAsaFixa.Builder().quantidadeDeAsas(1).quantidadeDeMotores(1).build();
-//		testeDroneAsaFixa.setNome("jorginho 2");
-//		testeDroneAsaFixa.resultados();
-//		System.out.println("Drone Asa Fixa " + testeDroneAsaFixa.resultados());
-//		assertNotEquals(testeDroneAsaFixa, null);
-//	}
-//	@Test
-//	public void testeDroneAsaRotativa() {
-//		DroneAsaRotativa testeDroneAsaRotativa = new DroneAsaRotativa.Builder().quantidadeDeMotores(1).build();
-//		testeDroneAsaRotativa.setNome("jorginho 3");
-//		testeDroneAsaRotativa.resultados();
-//		System.out.println("Drone Asa Rotativa " + testeDroneAsaRotativa.resultados());
-//		assertNotEquals(testeDroneAsaRotativa, null);
-//	}
-//	@Test
-//	public void testeHelicoptero() {
-//		Helicoptero testeHelicoptero = new Helicoptero.Builder().quantidadeDeMotores(2).build();
-//		testeHelicoptero.setNome("jorginho 3");
-//		testeHelicoptero.resultados();
-//		System.out.println("Helicoptero " + testeHelicoptero.resultados());
-//		assertNotEquals(testeHelicoptero, null);
-//	}
-//	@Test
-//	public void testeHibrido() {
-//		Hibrido testeHibrido = new Hibrido.Builder().quantidadeDeAsas(1).quantidadeDeMotores(1).build();
-//		testeHibrido.setNome("jorginho 3");
-//		testeHibrido.resultados();
-//		System.out.println("Hibrido " + testeHibrido.resultados());
-//		assertNotEquals(testeHibrido, null);
-//	}
-//	@Test
-//	public void testeMotoPlanador() {
-//		MotoPlanador testeMotoPlanador = new MotoPlanador.Builder().quantidadeDeAsas(1).quantidadeDeMotores(1).build();
-//		testeMotoPlanador.setNome("jorginho 3");
-//		testeMotoPlanador.resultados();
-//		System.out.println("MotoPlanador " + testeMotoPlanador.resultados());
-//		assertNotEquals(testeMotoPlanador, null);
-//	}
-//
-//	@Test
-//	public void testeDirigivel() {
-//		Dirigivel testeDirigivel = new Dirigivel.Builder().combustivel(Combustivel.AR_QUENTE).rigidez(Rigidez.HIBRIDO).build();
-//		testeDirigivel.setNome("jorginho 3");
-//		testeDirigivel.resultados();
-//		System.out.println("Balão " + testeDirigivel.resultados());
-//		assertNotEquals(testeDirigivel, null);
-//	}
-//	@Test
-//	public void testePlanador() {
-//		Planador testePlanador = new Planador.Builder().quantidadeDeAsas(1).build();
-//		testePlanador.setNome("jorginho 3");
-//		testePlanador.resultados();
-//		System.out.println("Planador " + testePlanador.resultados());
-//		assertNotEquals(testePlanador, null);
-//	}
-//	@Test
-//	public void testeArquivos() throws IOException {
-//		Entrada entrada = new Entrada();
-//		entrada.pegaEntradaETrataDados();
-//		Saida saida = new Saida();
-//		saida.escreveCsv();
-//		assertNotEquals(entrada, null);
-//	}
-	@Test
-//	public void testeBalao() {
-//		Balao testeBalao = new Balao();
-//		testeBalao.setNome("Balão sem builder");
-//		testeBalao.setCombustivel(Combustivel.AR_QUENTE);
-//		testeBalao.setPorte("medio");
-//		testeBalao.setImpulsdor("dilatação");
-//		testeBalao.resultados();
-//		System.out.println("Balão " + testeBalao.resultados());
-//		assertNotEquals(testeBalao, null);
-//	}
 	public static void main(String[] args) {
 		
 			Balao testeBalao = new Balao(Combustivel.AR_QUENTE, 
@@ -121,18 +37,84 @@ public class CriaAeronave {
 										 Tripulacao.TRIPULACAOUNICA, 
 										 OutrosComponentes.CESTO);
 			testeBalao.resultados();
-			System.out.println("Balão " + testeBalao.resultados());
+			System.out.println("\n"+"Balão: " + testeBalao.resultados());
 			Dirigivel testeDirigivel = new Dirigivel(Combustivel.HELIO, 
 													 "Led Zeplin", 
 													 "comercial", 
-													 "dilataçaõ", 
+													 "dilatação", 
 													 "grande", 
 													 Tripulacao.TRIPULACAODUPLA, 
 													 OutrosComponentes.LEME, 
 													 OutrosComponentes.GONDOLA,
 													 Rigidez.HIBRIDO);
-
-		
+			System.out.println("\n"+"Dirigivel "+testeDirigivel.resultados());
+			Aviao testeAviao = new Aviao("batjato", 
+										 "privado",
+										 "turbina", 
+										 "medio", 
+										 Tripulacao.TRIPULACAOPOLI, 
+										 Combustivel.ETANOL, 
+										 2, 
+										 3,
+										 OutrosComponentes.CAIXAPRETA);
+			System.out.println("\n"+"Avião: "+ testeAviao.resultados());
+			DroneAsaFixa testeDroneAsaFixa = new DroneAsaFixa("Drone 1", 
+															  "lazer", 
+															  "turbina", 
+															  "pequeno", 
+															  Tripulacao.NTRIPULADO, 
+															  Combustivel.GASOLINA, 
+															  1, 
+															  1,
+															  OutrosComponentes.CAMERA,
+															  OutrosComponentes.CONTROLEREMOTO);
+			System.out.println("\n"+"Drone Asa Fixa: " +testeDroneAsaFixa.resultados());
+			DroneAsaRotativa testeDroneAsaRotativa = new DroneAsaRotativa("Juninho o drone", 
+																		  "Lazer", 
+																		  "Helice", 
+																		  "Pequeno", 
+																		  Tripulacao.NTRIPULADO, 
+																		  Combustivel.BATERIA, 
+																		  8,
+																		  OutrosComponentes.CAMERA,
+																		  OutrosComponentes.CONTROLEREMOTO);
+			System.out.println("\n"+"Drone Asa Rotativa: "+testeDroneAsaRotativa.resultados());
+			Helicoptero testeHelicoptero = new Helicoptero("Helicoptero", 
+														   "Serviço", 
+														   "Helice", 
+														   "Grande", 
+														   Tripulacao.TRIPULACAODUPLA, 
+														   Combustivel.ETANOL, 
+														   2,
+														   OutrosComponentes.MANCHE);
+			System.out.println("\n"+"Helicoptero: "+ testeHelicoptero.resultados());
+			Hibrido testeHibrido = new Hibrido("Hibrido", 
+											   "Militar", 
+											   "Helice", 
+											   "Grande", 
+											   Tripulacao.TRIPULACAOPOLI, 
+											   Combustivel.GASOLINA, 
+											   1, 
+											   2,
+											   OutrosComponentes.CAIXAPRETA);
+			System.out.println("\n"+"Hibrido: "+testeHibrido.resultados());
+			MotoPlanador testeMotoPlanador = new MotoPlanador("Moto Planador", 
+															  "Lazer", 
+															  "Força", 
+															  "Medio", 
+															  Tripulacao.TRIPULACAOUNICA, 
+															  Combustivel.FORCA_E_GASOLINA, 
+															  1, 
+															  1);
+			System.out.println("\n"+"Moto Planador: "+testeMotoPlanador.resultados());
+			Planador testePlanador = new Planador("Planador", 
+					  							  "Lazer", 
+					  							  "Força", 
+					  							  "Medio", 
+					  							  Tripulacao.TRIPULACAOUNICA, 
+					  							  Combustivel.FORCA, 
+					  							  1);
+			System.out.println("\n"+"Moto Planador: "+testeMotoPlanador.resultados());
 	}
 }
 

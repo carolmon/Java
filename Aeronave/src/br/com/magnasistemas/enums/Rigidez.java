@@ -14,6 +14,6 @@ public enum Rigidez {
 	}
 
 	public String getRigidez() {
-		return rigidez;
+		return "\n" + "RIGIGEZ: "+this.rigidez;
 	}
 }

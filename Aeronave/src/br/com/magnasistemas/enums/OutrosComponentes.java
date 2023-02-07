@@ -8,6 +8,6 @@ public enum OutrosComponentes {
 		componentes = valorOpcao;
 	}
 	public String getComponentes() {
-		return componentes;
+		return "\n" + "OUTROS COMPONENTES: "+this.componentes;
 	}
 }

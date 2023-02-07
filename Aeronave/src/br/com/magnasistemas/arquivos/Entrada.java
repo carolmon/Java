@@ -43,8 +43,8 @@ public class Entrada {
 			funcao = campo[3].toUpperCase().trim().replace(" ", "_");
 			nome = campo[4].toUpperCase().trim().replace(" ", "_");
 			rigidez = Rigidez.valueOf(campo[5].toUpperCase().trim().replace(" ", "_"));
-			quantiadeAsas = campo[6].toUpperCase().trim().replace(" ", "_");
-			quantidadeMotores = campo[7].toUpperCase().trim().replace(" ", "_");
+			quantiadeAsas =campo[6].toUpperCase().trim().replace(" ", "_") ;
+			quantidadeMotores =campo[7].toUpperCase().trim().replace(" ", "_") ;
 			tipoDeAeronave = Aeronave.valueOf(campo[8].toUpperCase().trim().replace(" ", "_"));
 			Tratamento tramento = new Tratamento();
 			tramento.tratamento();

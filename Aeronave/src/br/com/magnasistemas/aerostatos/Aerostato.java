@@ -13,7 +13,7 @@ public class Aerostato extends Aeronave {
 		return rigidez;
 	}
 
-	public void setRigidez(String rigidez) {
+	public void setRigidez(Rigidez rigidez) {
 		this.rigidez = rigidez;
 	}
 

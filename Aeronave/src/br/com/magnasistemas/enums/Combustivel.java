@@ -16,6 +16,6 @@ public enum Combustivel {
 	}
 
 	public String getCombustivel() {
-		return combustivel;
+		return "\n" + "COMBUSTIVEL: "+this.combustivel;
 	}
 }
