@@ -1,3 +1,4 @@
+//package src.br.com.magnasistemas.testes;
 package src.br.com.magnasistemas.testes;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

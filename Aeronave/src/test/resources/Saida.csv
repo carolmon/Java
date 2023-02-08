@@ -1,0 +1,253 @@
+[
+ Avião: 
+NOME: AVIAOTESTE
+IMPULSOR: PISTÃOGASOLINA
+PORTE: GRANDE
+FUNÇÃO: COMERCIAL
+CATEGORIA DE ASAS:  biplano 
+CATEGORIA DE MOTORES:  trimotor 
+TIPO DE ASA: asa fixa 
+OUTROS COMPONENTES: caixa preta 
+TRIPULAÇÃO: tripulcao poli 
+MOTORIÇASÃO: motor pistão ou jato , 
+ Balão: 
+NOME: BALAOTESTE
+IMPULSOR: DILATAÇÃOHELIO
+FLUTUABILIDADE: balão a gas 
+PORTE: MEDIO
+FUNÇÃO: LAZER
+TRIPULAÇÃO: tripulçao unica 
+OUTROS COMPONENTES: cesto , 
+ Dirigivel: 
+NOME: DIRIGIVELTESTE
+IMPULSOR: DILATAÇÃO HELIO Dirigivel semi Rigido   
+PORTE: MEDIO 
+FUNÇÃO: COMERCIAL
+RIGIGEZ: semirigido
+OUTROS COMPONENTES: leme 
+OUTROS COMPONENTES: gondola 
+TRIPULAÇÃO: tripulçao dupla , 
+ Helicoptero: 
+NOME: HELICOPTEROTESTE
+IMPULSOR: HELICEETANOL
+PORTE: GRANDE
+FUNÇÃO: SERVIÇO
+CATEGORIA DE ROTORES: rotor convencional 
+TIPO DE ASA: asa rotativa 
+OUTROS COMPONENTES: manche 
+TRIPULAÇÃO: tripulçao dupla 
+MOTORIÇASÃO: motor rotatorio , 
+ Drone Asa Fixa: 
+NOME: DRONEASAFIXATESTE
+IMPULSOR: TURBINAGASOLINA
+PORTE: PEQUENO
+FUNÇÃO: SERVIÇOmonomotor monoplano 
+TIPO DE ASA: asa fixa 
+OUTROS COMPONENTES: controle remoto 
+OUTROS COMPONENTES: camera 
+TRIPULAÇÃO: não tripulado 
+MOTORIÇASÃO: motor pistão , 
+ Drone Asa Rotativa: 
+NOME: DRONEASAROTATIVATESTE 
+IMPULSOR: HELICE GASOLINA 
+PORTE: PEQUENO 
+FUNÇÃO: LAZER
+CATEGORIA DE ROTORES:  rotor unico  
+TIPO DE ASA: asa rotativa 
+OUTROS COMPONENTES: controle remoto 
+TRIPULAÇÃO: não tripulado 
+MOTORIÇASÃO: motor rotatorio , 
+ Planador: 
+NOME: PLANADORTESTE
+IMPULSOR: FORÇAFORCA
+PORTE: MEDIO
+FUNÇÃO: LAZER
+CATEGORIA DE ASAS: monoplano
+TIPO DE ASA: asa fixa 
+TRIPULAÇÃO: tripulçao unica 
+MOTORIÇASÃO: não motorizado , 
+ MotoPlanador: 
+NOME: MOTOPLANADORTESTE
+IMPULSOR: FORÇAFORCA_E_GASOLINA
+PORTE: MEDIO
+FUNÇÃO: LASER
+CATEGORIA DE ASAS: monoplano 
+CATEGORIA DE MOTORES: monomotor 
+TIPO DE ASA: asa fixa 
+TRIPULAÇÃO: tripulçao unica 
+MOTORIÇASÃO: motor pistão , 
+ Hibrido: 
+NOME: HIBRIDOTESTE
+IMPULSOR: PISTÃOGASOLINA
+PORTE: GRANDE
+FUNÇÃO: MILITAR
+CATEGORIA DE ASAS:  monoplano
+CATEGORIA DE MOTORES:  quadrimotor 
+TIPO DE ASA: asa hibrida 
+OUTROS COMPONENTES: caixa preta 
+TRIPULAÇÃO: tripulcao poli 
+MOTORIÇASÃO: motor a pistão e motor rotatorio , 
+ Balão: 
+NOME: BALAOTESTE2
+IMPULSOR: DILATAÇÃOAR_QUENTE
+FLUTUABILIDADE: balão de ar quente 
+PORTE: MEDIO
+FUNÇÃO: LAZER
+TRIPULAÇÃO: tripulçao unica 
+OUTROS COMPONENTES: cesto , 
+ Balão: 
+NOME: BALAOTESTE
+IMPULSOR: DILATAÇÃOAR_QUENTE_HELIO
+FLUTUABILIDADE: balão de rozier 
+PORTE: MEDIO
+FUNÇÃO: LAZER
+TRIPULAÇÃO: tripulçao unica 
+OUTROS COMPONENTES: cesto , 
+ Drone Asa Rotativa: 
+NOME: DRONEASAROTATIVATESTE 
+IMPULSOR: HELICE GASOLINA 
+PORTE: PEQUENO 
+FUNÇÃO: LAZER
+CATEGORIA DE ROTORES:  tricóptro  
+TIPO DE ASA: asa rotativa 
+OUTROS COMPONENTES: controle remoto 
+TRIPULAÇÃO: não tripulado 
+MOTORIÇASÃO: motor rotatorio , 
+ Drone Asa Rotativa: 
+NOME: DRONEASAROTATIVATESTE 
+IMPULSOR: HELICE GASOLINA 
+PORTE: PEQUENO 
+FUNÇÃO: LAZER
+CATEGORIA DE ROTORES:  quadcótero  
+TIPO DE ASA: asa rotativa 
+OUTROS COMPONENTES: controle remoto 
+TRIPULAÇÃO: não tripulado 
+MOTORIÇASÃO: motor rotatorio , 
+ Drone Asa Rotativa: 
+NOME: DRONEASAROTATIVATESTE 
+IMPULSOR: HELICE GASOLINA 
+PORTE: PEQUENO 
+FUNÇÃO: LAZER
+CATEGORIA DE ROTORES:  hexacóptero  
+TIPO DE ASA: asa rotativa 
+OUTROS COMPONENTES: controle remoto 
+TRIPULAÇÃO: não tripulado 
+MOTORIÇASÃO: motor rotatorio , 
+ Drone Asa Rotativa: 
+NOME: DRONEASAROTATIVATESTE 
+IMPULSOR: HELICE GASOLINA 
+PORTE: PEQUENO 
+FUNÇÃO: LAZER
+CATEGORIA DE ROTORES:  octocóptero  
+TIPO DE ASA: asa rotativa 
+OUTROS COMPONENTES: controle remoto 
+TRIPULAÇÃO: não tripulado 
+MOTORIÇASÃO: motor rotatorio , 
+ MotoPlanador: 
+NOME: MOTOPLANADORTESTE
+IMPULSOR: FORÇAFORCA_E_GASOLINA
+PORTE: MEDIO
+FUNÇÃO: LASER
+CATEGORIA DE ASAS: monoplano 
+CATEGORIA DE MOTORES: monomotor 
+TIPO DE ASA: asa fixa 
+TRIPULAÇÃO: tripulçao unica 
+MOTORIÇASÃO: motor pistão , 
+ Planador: 
+NOME: PLANADORTESTE
+IMPULSOR: FORÇAFORCA
+PORTE: MEDIO
+FUNÇÃO: LAZER
+CATEGORIA DE ASAS: monoplano
+TIPO DE ASA: asa fixa 
+TRIPULAÇÃO: tripulçao unica 
+MOTORIÇASÃO: não motorizado , 
+ Dirigivel: 
+NOME: DIRIGIVELTESTE
+IMPULSOR: DILATAÇÃO HELIO Dirigivel Rigido   
+PORTE: MEDIO 
+FUNÇÃO: COMERCIAL
+RIGIGEZ: Rigido
+OUTROS COMPONENTES: leme 
+OUTROS COMPONENTES: gondola 
+TRIPULAÇÃO: tripulçao dupla , 
+ Dirigivel: 
+NOME: DIRIGIVELTESTE
+IMPULSOR: DILATAÇÃO HELIO Dirigivel não Rigido   
+PORTE: MEDIO 
+FUNÇÃO: COMERCIAL
+RIGIGEZ: N Rigido
+OUTROS COMPONENTES: leme 
+OUTROS COMPONENTES: gondola 
+TRIPULAÇÃO: tripulçao dupla , 
+ Dirigivel: 
+NOME: DIRIGIVELTESTE
+IMPULSOR: DILATAÇÃO HELIO Dirigivel metal-clad   
+PORTE: MEDIO 
+FUNÇÃO: COMERCIAL
+RIGIGEZ: metal-clad
+OUTROS COMPONENTES: leme 
+OUTROS COMPONENTES: gondola 
+TRIPULAÇÃO: tripulçao dupla , 
+ Dirigivel: 
+NOME: DIRIGIVELTESTE
+IMPULSOR: DILATAÇÃO HELIO Dirigivel hibrido   
+PORTE: MEDIO 
+FUNÇÃO: COMERCIAL
+RIGIGEZ: hibrido
+OUTROS COMPONENTES: leme 
+OUTROS COMPONENTES: gondola 
+TRIPULAÇÃO: tripulçao dupla , 
+ Drone Asa Fixa: 
+NOME: DRONEASAFIXATESTE
+IMPULSOR: TURBINAGASOLINA
+PORTE: PEQUENO
+FUNÇÃO: SERVIÇOmonomotor monoplano 
+TIPO DE ASA: asa fixa 
+OUTROS COMPONENTES: controle remoto 
+OUTROS COMPONENTES: camera 
+TRIPULAÇÃO: não tripulado 
+MOTORIÇASÃO: motor pistão , 
+ Avião: 
+NOME: AVIAOTESTE
+IMPULSOR: PISTÃOGASOLINA
+PORTE: GRANDE
+FUNÇÃO: COMERCIAL
+CATEGORIA DE ASAS:  monoplano 
+CATEGORIA DE MOTORES:  monomotor 
+TIPO DE ASA: asa fixa 
+OUTROS COMPONENTES: caixa preta 
+TRIPULAÇÃO: tripulcao poli 
+MOTORIÇASÃO: motor pistão ou jato , 
+ Avião: 
+NOME: AVIAOTESTE
+IMPULSOR: PISTÃOGASOLINA
+PORTE: GRANDE
+FUNÇÃO: COMERCIAL
+CATEGORIA DE ASAS:  Asa invalido 
+CATEGORIA DE MOTORES:  trimotor 
+TIPO DE ASA: asa fixa 
+OUTROS COMPONENTES: caixa preta 
+TRIPULAÇÃO: tripulcao poli 
+MOTORIÇASÃO: motor pistão ou jato , 
+ Avião: 
+NOME: AVIAOTESTE
+IMPULSOR: PISTÃOGASOLINA
+PORTE: GRANDE
+FUNÇÃO: COMERCIAL
+CATEGORIA DE ASAS:  triplano 
+CATEGORIA DE MOTORES:  quadrimotor 
+TIPO DE ASA: asa fixa 
+OUTROS COMPONENTES: caixa preta 
+TRIPULAÇÃO: tripulcao poli 
+MOTORIÇASÃO: motor pistão ou jato , 
+ Helicoptero: 
+NOME: HELICOPTEROTESTE
+IMPULSOR: HELICEETANOL
+PORTE: GRANDE
+FUNÇÃO: SERVIÇO
+CATEGORIA DE ROTORES: quantidade de motores invalidos  
+TIPO DE ASA: asa rotativa 
+OUTROS COMPONENTES: manche 
+TRIPULAÇÃO: tripulçao dupla 
+MOTORIÇASÃO: motor rotatorio ]

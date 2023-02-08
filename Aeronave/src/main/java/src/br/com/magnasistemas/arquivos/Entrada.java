@@ -22,7 +22,7 @@ public class Entrada {
 	protected static String quantiadeAsas;
 	protected static String quantidadeMotores;
 	protected static Aeronave tipoDeAeronave;
-	static String caminhoArquivo = "C:\\dev\\workspaces\\2022_12\\Aeronave\\src\\main\\resources\\Entrada.csv";
+	static String caminhoArquivo = "C:\\dev\\workspaces\\2022_12\\Aeronave\\src\\test\\resources\\Entrada.csv";
 	static String caminhoArquivoRemoto = "C:\\Users\\carol\\eclipse-workspace\\Aeronave\\src\\br\\com\\magnasistemas\\arquivos\\Entrada.csv";
 	static List<Object> registros = new ArrayList<>();
 	
